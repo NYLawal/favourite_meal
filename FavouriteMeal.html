@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favourite Meal</title>
+
+    <style>
+      body {
+        background-color: rgb(245, 58, 58);
+      }
+
+      #centered {
+        background-color: white;
+        width: 80%;
+        min-height: 1800px;
+        margin: auto;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+
+      #centered > div {
+        display: flex;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      img {
+        height: 250px;
+        width: 300px;
+        margin: 30px 50px 10px 200px;
+      }
+
+      nav > a {
+        margin-right: 30px;
+        color: whitesmoke;
+        font-size: large;
+        text-decoration: none;
+        border-bottom: 1px solid rgb(247, 165, 71);
+      }
+
+      p {
+        text-align: justify;
+        margin-left: 50px;
+        width: 90%;
+      }
+
+      .titles {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-size: 25px;
+        color: brown;
+        text-align: center;
+      }
+
+      .imagintable {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+      }
+
+      #ingrdtable {
+        border-collapse: collapse;
+        margin: auto;
+        width: 50%;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid brown;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .cards li {
+        display: inline-block;
+        list-style: none;
+        height: 300px;
+        width: 200px;
+        background-color: rgb(252, 188, 168);
+        border-radius: 20px;
+        margin-right: 10px;
+      }
+
+      .imagecard {
+        width: 90%;
+        height: 60%;
+        margin: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation to various sections of the page -->
+    <nav class="navbar" style="margin: 40px 30px 20px 150px">
+      <a href="#heading">Name</a>
+      <a href="#about">About</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#recipe">Recipe</a>
+      <a href="#photos">Photos</a>
+    </nav>
+
+    <!-- Introduction to my favourite meal -->
+    <div id="centered">
+      <div style="background-color: rgb(247, 203, 162)">
+        <img src="images/Amala.jpg" alt="Yam flour" />
+
+        <div style="margin-top: 100px">
+          <h1>My Favourite Meal</h1>
+          <h3 style="color: rgb(99, 62, 6)">Amala Dudu (Yam Flour)</h3>
+        </div>
+      </div>
+
+      <!-- About my favourite meal -->
+      <section id="about" style="display: block">
+        <p class="titles"><b>ABOUT</b></p>
+        <p>
+          <strong>Amala dudu</strong>, also called yam flour, is a delicious and nutritious
+          delicacy eaten mostly by the Yoruba ethnic group of Nigeria. Amala has
+          found its way to other parts of Nigeria and Africa and its popularity
+          is increasing by the day.
+        </p>
+        <p>
+          Amala is made out of flour and there are different kinds, depending on
+          what is used to make the flour. Amala isu is the most common type. The
+          flour used is derived from yam. Amala is high in caborhydrates and
+          packs a lot of calories.
+        </p>
+        <p>
+          The yam flour can also be called 'elubo'. Yam is mostly white in
+          colour, but it turns into a brownish colour after it has been dried;
+          this gives amala its thick brown colour. Amala can be easily prepared
+          and eaten with any soup of choice (egusi, gbegiri, efo riro, ewedu,
+          etc). To learn how you can present your amala in sumptuous ways, see
+          some options <a href="#photos">below.</a>
+        </p>
+      </section>
+
+      <!-- Ingredients to prepare the meal -->
+      <section id="ingredients" style="display: block">
+        <p class="titles"><b>INGREDIENTS</b></p>
+        <p>
+          Amala dudu is easy to prepare and doesn't require many ingredients.
+          See the table below to know what you need to start preparing your next
+          amala. Be sure to adjust the measurements as the case may be.
+        </p>
+        <table id="ingrdtable">
+          <thead style="background-color: rgb(247, 203, 162)">
+            <tr>
+              <th>S/N</th>
+              <th>Ingredient</th>
+              <th>Measurement</th>
+              <th>Image</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Elubo</td>
+              <td>500 grams</td>
+              <td>
+                <img
+                  class="imagintable"
+                  src="images/elubo bowl.jpeg"
+                  alt="elubo in a bowl"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Water</td>
+              <td>4 cups</td>
+              <td>
+                <img
+                  class="imagintable"
+                  src="images/water jar.jpeg"
+                  alt="water in a jar"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Recipe for the meal -->
+      <section id="recipe" style="display: block">
+        <p class="titles"><b>RECIPE</b></p>
+        <p>
+          Many a time, people find making amala a little tricky, as it forms
+          lumps easily if not properly handled. Read on to learn how to make
+          lump-free amala.
+        </p>
+        <ul style="margin: auto; width: fit-content; text-align: left">
+          <li>Place a pot on fire.</li>
+          <li>Pour water into the pot and allow to boil.</li>
+          <li>
+            When the water begins to boil, gradually begin to add the yam flour.
+          </li>
+          <li>
+            Turn the flour with a wooden stick very quickly so as to prevent
+            lumps from forming. Turn until smooth.
+          </li>
+          <li>
+            Add little water and leave to cook on low heat for about five
+            minutes.
+          </li>
+          <li>Turn every now and then to ensure even cooking.</li>
+          <li>Bring it down from fire and keep turning until very smooth.</li>
+          <li>
+            Your amala is ready! Pack into nylon wraps or serve as hot.
+            <b>Enjoy!</b>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Pictures showing different ways of serving the meal -->
+      <section id="photos" style="display: block">
+        <p class="titles"><b>GALLERY</b></p>
+        <p>
+          Food presentation matters as much as food preparation. See how you can
+          present your delicious amala and some kinds of soups that can give you
+          a yummy experience altogether.
+        </p>
+
+        <ul class="cards" style="margin-left: -30px">
+          <li>
+            <h4>Amala with ewedu soup</h4>
+            <img
+              class="imagecard"
+              src="images/ewedu card.jpeg"
+              alt="amala with ewedu"
+            />
+          </li>
+          <li>
+            <h4>Amala with egusi soup</h4>
+            <img
+              class="imagecard"
+              src="images/egusi card.jpeg"
+              alt="amala with egusi"
+            />
+          </li>
+          <li>
+            <h4>Amala with gbegiri soup</h4>
+            <img
+              class="imagecard"
+              src="images/gbegiri card.jpeg"
+              alt="amala with gbegiri"
+            />
+          </li>
+          <li>
+            <h4>Amala with efo riro soup</h4>
+            <img
+              class="imagecard"
+              src="images/eforiro card.jpeg"
+              alt="amala with efo riro"
+            />
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
+
